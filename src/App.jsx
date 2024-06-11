@@ -15,12 +15,12 @@ const router = createBrowserRouter ([
    }
 ])
 
-export function App() {
+export default function App() {
   return (
 
       <ThemeProvider theme={theme}>  
           <RouterProvider router={router}/> 
-          <GlobalStyled/>
+          <GlobalStyle/>
       </ThemeProvider>
 
   )

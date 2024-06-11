@@ -1,7 +1,8 @@
-import { ButtonContainer, cardContainer, IconContainer, ResultContainer } from "./Home.styles";
+import { ButtonContainer, CardContainer, IconContainer, ResultContainer } from "./Home.styles";
 
-import iconStarImg from "../assets/icon-star.svg"
-import thankYouImg from "../assets/illustration-thank-you.svg"
+import iconStarImg from "../assets/icon-star.png"
+import thankYouImg from "../assets/illustration-thank-you.png"
+import { useState } from 'react';
 
 export function Home() {
     const[mostrarResultado, setMostrarResultado] = useState(false)
@@ -21,7 +22,7 @@ export function Home() {
     
     return (
     mostrarResultado === false ? (
-        <cardContainer>
+        <CardContainer>
       <IconContainer>
         <img src="{iconStarImg} " alt="icone de estrela" />
       </IconContainer>
@@ -38,9 +39,9 @@ export function Home() {
        </ButtonContainer>
 
       <button>enviar</button>
-    </cardContainer>
+    </CardContainer>
       ) : (
-        <cardContainer>
+        <CardContainer>
           <img src={thankYouImg} alt="imagem de agradecimento" />
 
           <ResultContainer>
@@ -51,7 +52,7 @@ export function Home() {
 
           <p>Agradecemos por dedicar um momento para nos avaliar. Se precisar de mais suporte, não hesite em entrar em contato!</p>
           
-       </cardContainer>
+       </CardContainer>
       )
 
   )

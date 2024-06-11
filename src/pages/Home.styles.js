@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const cardContainer = styled.div`
+export const CardContainer = styled.div`
             background: ${props => props.theme.cardGradient};
             max-width: 41.2rem;
             padding: 3.2rem;
@@ -29,7 +29,7 @@ export const cardContainer = styled.div`
                 font-weight: 700;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                background: ${props = props.theme.submitButtonColor};
+                background: ${props => props.theme.submitButtonColor};
                 color: ${props => props.theme.white}; 
                 cursor: pointer;
                 transition: all .3s;
