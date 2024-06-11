@@ -14,7 +14,7 @@ export function Home() {
         setFeedbackNote(feedback)
     }
 
-    function handleSubimit() {
+    function handleSubmit() {
       if (feedbackNote === 0) return
       
       setMostrarResultado(true)
@@ -23,8 +23,9 @@ export function Home() {
     return (
     mostrarResultado === false ? (
         <CardContainer>
+
       <IconContainer>
-        <img src="{iconStarImg} " alt="icone de estrela" />
+        <img src= {iconStarImg} alt="icone de estrela" />
       </IconContainer>
 
       <h1>Como foi o atendimento?</h1>
@@ -38,7 +39,7 @@ export function Home() {
         <button onClick={handleFeedbackButtonClick}>5</button>
        </ButtonContainer>
 
-      <button>enviar</button>
+      <button onClick={handleSubmit}>enviar</button>
     </CardContainer>
       ) : (
         <CardContainer>
